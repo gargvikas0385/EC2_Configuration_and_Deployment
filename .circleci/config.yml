@@ -20,6 +20,7 @@ jobs:
             cat inventory && \
             chmod 400 *.pem && \
             ls -la && \
+            export ANSIBLE_HOST_KEY_CHECKING=False && \
             ansible-playbook -i inventory playbook.yml --private-key udacity_CICD.pem
 
 workflows:
