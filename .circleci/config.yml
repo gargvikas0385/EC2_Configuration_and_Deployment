@@ -19,7 +19,6 @@ jobs:
             ls -la && \
             cat inventory && \
             ansible-playbook -i inventory playbook.yml
-
 workflows:
   my_workflow:
     jobs:
