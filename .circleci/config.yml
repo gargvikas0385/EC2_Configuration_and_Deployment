@@ -18,7 +18,8 @@ jobs:
             pwd && \
             ls -la && \
             cat inventory && \
-            ansible-playbook -i inventory playbook.yml
+            ansible-playbook -i inventory playbook.yml --private-key udacity_CICD.pem
+
 workflows:
   my_workflow:
     jobs:
